@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bioio-nd2
-  version: "2.5.0"
+  version: "2.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bioio_nd2-${{ version }}.tar.gz
-  sha256: c07398784d68a1d4c6491305bafbe5608ab0fbc423389e242acee56eba786867
+  sha256: 60e7ef7d7069af9a64d0b48155fc0c44743ed130e21e0c3c56a944e0ae1216bb
 
 build:
   number: 0
@@ -32,6 +32,7 @@ requirements:
     - numpy >=1.24
     - fsspec >=2022.8.0
     - pyyaml >=6.0
+    - s3fs
     - xarray >=0.16.1
 
 tests:
