@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: bioio-nd2
-  version: "2.6.0"
+  version: "3.0.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/bioio_nd2-${{ version }}.tar.gz
-  sha256: 60e7ef7d7069af9a64d0b48155fc0c44743ed130e21e0c3c56a944e0ae1216bb
+  sha256: 7c81816b03dfa25b15e80df32c04cd9aeb9013c5731e46b00c754653f4a4dae4
 
 build:
   number: 0
